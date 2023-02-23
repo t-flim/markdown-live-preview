@@ -1,9 +1,11 @@
 import './App.css'
+import { useState } from 'react'
 
 function App() {
+  const [markdown, setMarkdown] = useState("")
 
   const handleInput = (e) => {
-    console.log(e.target.value)
+    setMarkdown(e.target.value)
   }
 
   return (
@@ -11,7 +13,9 @@ function App() {
       <header id="header"></header>
       <main id="main">
         <textarea id="editor" onChange={handleInput} />
-        <div id="preview"></div>
+        <div id="preview">
+          {markdown}
+        </div>
       </main>
       <footer id="footer"></footer>
     </div>
