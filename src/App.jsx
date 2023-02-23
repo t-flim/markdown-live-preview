@@ -15,7 +15,9 @@ function App() {
 
   return (
     <div className="app">
-      <header id="header"></header>
+      <header id="header">
+        <h1 id="title">Markdown Live Preview</h1>
+      </header>
       <main id="main">
         <textarea id="editor" value={markdown} onChange={handleInput} />
         <div id="preview" dangerouslySetInnerHTML={getMarkdownText()}></div>

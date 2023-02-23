@@ -29,9 +29,16 @@ body {
   background-color: var(--clr-white);
 }
 
+#header {
+  text-align: center;
+  padding: 0.75em 0;
+  color: var(--clr-white);
+  background-color: var(--clr-lightgray);
+}
+
 #main {
-  height: 100%;
   display: flex;
+  height: 100%;
 }
 
 #editor {
