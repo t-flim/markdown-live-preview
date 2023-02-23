@@ -14,6 +14,8 @@ function App() {
     return {__html:marked(markdown)}
   }
 
+  const currentYear = new Date().getFullYear()
+
   return (
     <div className="app">
       <header id="header">
@@ -24,7 +26,7 @@ function App() {
         <div id="preview" dangerouslySetInnerHTML={getMarkdownText()}></div>
       </main>
       <footer id="footer">
-        <p id="footer-content">&copy; 2023 | thefulim.my</p>
+        <p id="footer-content">&copy; {currentYear} | thefulim.my</p>
         <a  href=""><img id="footer-logo" src={logo} /></a>
       </footer>
     </div>
