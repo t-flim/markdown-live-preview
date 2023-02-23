@@ -1,6 +1,7 @@
-import './App.css'
-import { useState } from 'react'
-import { marked } from 'marked'
+import "./App.css"
+import logo from "./assets/github-mark-white.png"
+import { useState } from "react"
+import { marked } from "marked"
 
 function App() {
   const [markdown, setMarkdown] = useState("")
@@ -22,7 +23,10 @@ function App() {
         <textarea id="editor" value={markdown} onChange={handleInput} />
         <div id="preview" dangerouslySetInnerHTML={getMarkdownText()}></div>
       </main>
-      <footer id="footer"></footer>
+      <footer id="footer">
+        <p id="footer-content">&copy; 2023 | thefulim.my</p>
+        <a  href=""><img id="footer-logo" src={logo} /></a>
+      </footer>
     </div>
   )
 }
