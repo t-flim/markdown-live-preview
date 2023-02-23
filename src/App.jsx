@@ -1,5 +1,6 @@
 import './App.css'
 import { useState } from 'react'
+import { marked } from 'marked'
 
 function App() {
   const [markdown, setMarkdown] = useState("")
@@ -8,14 +9,16 @@ function App() {
     setMarkdown(e.target.value)
   }
 
+  const getMarkdownText = () => {
+    return {__html:marked(markdown)}
+  }
+
   return (
     <div className="app">
       <header id="header"></header>
       <main id="main">
         <textarea id="editor" onChange={handleInput} />
-        <div id="preview">
-          {markdown}
-        </div>
+        <div id="preview" dangerouslySetInnerHTML={getMarkdownText()}></div>
       </main>
       <footer id="footer"></footer>
     </div>
