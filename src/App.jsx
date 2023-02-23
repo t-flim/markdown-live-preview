@@ -17,7 +17,7 @@ function App() {
     <div className="app">
       <header id="header"></header>
       <main id="main">
-        <textarea id="editor" onChange={handleInput} />
+        <textarea id="editor" value={markdown} onChange={handleInput} />
         <div id="preview" dangerouslySetInnerHTML={getMarkdownText()}></div>
       </main>
       <footer id="footer"></footer>
