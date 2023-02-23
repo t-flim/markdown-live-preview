@@ -22,7 +22,7 @@ function App() {
         <h1 id="title">Markdown Live Preview</h1>
       </header>
       <main id="main">
-        <textarea id="editor" value={markdown} onChange={handleInput} />
+        <textarea id="editor" value={markdown} onChange={handleInput} spellCheck="false"/>
         <div id="preview" dangerouslySetInnerHTML={getMarkdownText()}></div>
       </main>
       <footer id="footer">
