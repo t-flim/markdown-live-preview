@@ -1,7 +1,18 @@
+:root {
+  --clr-black: #000;
+  --clr-lightgray: #4D455D;
+  --clr-white: #F5E9CF;
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
 }
