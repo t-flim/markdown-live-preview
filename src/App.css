@@ -29,6 +29,11 @@ body {
   background-color: var(--clr-white);
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
 #header,
 #footer {
   text-align: center;
@@ -40,6 +45,7 @@ body {
 #main {
   display: flex;
   height: 100%;
+  flex: 1;
 }
 
 #editor {
