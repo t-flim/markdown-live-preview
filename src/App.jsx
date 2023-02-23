@@ -27,7 +27,7 @@ function App() {
       </main>
       <footer id="footer">
         <p id="footer-content">&copy; {currentYear} | thefulim.my</p>
-        <a  href=""><img id="footer-logo" src={logo} /></a>
+        <a  href="https://github.com/t-flim/markdown-live-preview" target="_blank"><img id="footer-logo" src={logo} /></a>
       </footer>
     </div>
   )
