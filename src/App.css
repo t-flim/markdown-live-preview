@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 :root {
   --clr-black: #000;
   --clr-lightgray: #4D455D;
   --clr-white: #F5E9CF;
+
+  --body-font: "Ubuntu", sans-serif;
 }
 
 *,
@@ -13,6 +17,8 @@
 }
 
 body {
+  font-size: 1.3rem;
+  font-family: var(--body-font);
   color: var(--clr-black);
   background-color: var(--clr-white);
 }
